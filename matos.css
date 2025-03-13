@@ -18,12 +18,13 @@ html, body {
 }
 
 header {
-    text-align: center;
+    
     background-color: black;
     color: white;
 }
 
 header > h1 {
+    text-align: center;
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--font1);
@@ -32,8 +33,15 @@ header > h1 {
 }
 
 header > p {
+    text-align: center;
     padding-bottom: 50px;
     font-size: 1.3em;
+}
+
+.samp {
+    font-size: 1em;
+    padding: 10px;
+    text-align: left;
 }
 
 a {
@@ -55,6 +63,10 @@ section {
     font-size: 1.3em;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     color: black;
     font-weight: normal;
@@ -63,12 +75,34 @@ section.normal {
 section.imagem {
     background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.534);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.226);
+    background-color: rgba(0, 0, 0, 0.144);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+    background-image: url('imagens/images.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section#img02{
+    background-image: url(imagens/arco.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section#img03{
+    background-image: url('imagens/arco2.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 footer {
